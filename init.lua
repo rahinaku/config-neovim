@@ -18,3 +18,6 @@ vim.o.smartcase = true          -- 検索に大文字が含まれている場合
 vim.o.cursorline = true         -- カーソル行をハイライト
 vim.o.clipboard = "unnamedplus" -- システムクリップボードと連携
 vim.o.autoread = true           -- ファイルが外部で変更されたら自動で読み直す
+
+-- diagnostic config
+vim.diagnostic.config({ signs = true })
