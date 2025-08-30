@@ -35,5 +35,19 @@ return {
             end,
             desc = "Telescope help tags"
         },
+        {
+            "<leader>tr",
+            function()
+                require('telescope.builtin').lsp_references();
+            end,
+            desc = "Telescope lsg_references"
+        },
+        {
+            "<leader>td",
+            function()
+                require('telescope.builtin').lsp_definitions();
+            end,
+            desc = "Telescope lsg_definitions"
+        },
     },
 }
